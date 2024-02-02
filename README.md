@@ -2,7 +2,7 @@
 
 Version: 0.7 (updated)
 
-![calculator-v0 7](https://github.com/SpRxS/calculator-in-c/assets/101943553/bcb3c199-c438-4b83-846b-2c8df232130e)
+![calculator-v0 7](https://github.com/SpRxS/calculator-in-c/assets/101943553/2fb0922f-ae1c-4d5b-b940-a65fbbd50b01)
 
 -----------------------------------------------------------------------------------------------------------------------
 
