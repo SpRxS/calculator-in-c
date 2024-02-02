@@ -4,48 +4,79 @@
 
 int main()
 {
-	SetConsoleTitle("Calculator-v0.1"); // Console header set with windows.h library
+	SetConsoleTitle("Calculator-v0.7");
+	system("color 04");
 	
+	int option;
 	double num1, num2;
-	char opt;
 	
-	while(1)
+	do
 	{
-		printf("--------------------|Calculator made by pRx|--------------------\n\n");
-		printf("-|1 [+]\n");
-		printf("-|2 [-]\n");
-		printf("-|3 [*]\n");
-		printf("-|4 [/]\n\n");
-		printf("-|quit [q]\n\n");
-		printf("--|Enter an operator or number (+, 1): ");
-		scanf(" %c", &opt);
+		printf(" ============================================================");
+	    printf("\n ||                                                        ||");
+	    printf("\n ||                     VOTE MANAGER                       ||");
+	    printf("\n ||                   ver. 0.7  by pRx                     ||");
+	    printf("\n ||                                                        ||");
+	    printf("\n ============================================================");
+	    printf("\n\n");
+	    
+	    printf(" ********** MAIN MENU **********");
+        printf("\n\n [1] +");
+        printf("\n [2] -");
+        printf("\n [3] *");
+        printf("\n [4] /");
+        printf("\n [5] Exit");
 		
-		if (opt == 'q')
-			exit(0);
+		printf("\n\n Enter your choice: ");
+        scanf("%d", &option);
+        system("cls");
 		
-		printf("\nEnter the two numbers (1 2): ");
-		scanf("%lf %lf", &num1, &num2);
-		
-		switch(opt)
+		switch(option)
 		{
-			case '1':case '+':
+			case 1:
+		    	printf("Enter your number (1 2): ");
+				scanf("%lf %lf", &num1, &num2);
+				
 				printf("\n%.1lf + %.1lf = %.1lf\n\n", num1, num2, num1 + num2);
+				
+				printf("--------------------------------------------------\n\n");
 				break;
 			
-			case '2':case '-':
+			case 2:
+				printf("Enter your number (1 2): ");
+				scanf("%lf %lf", &num1, &num2);
+				
 				printf("\n%.1lf - %.1lf = %.1lf\n\n", num1, num2, num1 - num2);
+				
+				printf("--------------------------------------------------\n\n");
 				break;
 			
-			case '3':case '*':
+			case 3:
+				printf("Enter your number (1 2): ");
+				scanf("%lf %lf", &num1, &num2);
+				
 				printf("\n%.1lf * %.1lf = %.1lf\n\n", num1, num2, num1 * num2);
+				
+				printf("--------------------------------------------------\n\n");
 				break;
 				
-			case '4':case '/':
+			case 4:
+				printf("Enter your number (1 2): ");
+				scanf("%lf %lf", &num1, &num2);
+				
 				printf("\n%.1lf / %.1lf = %.1lf\n\n", num1, num2, num1 / num2);
+				
+				printf("--------------------------------------------------\n\n");
 				break;
 				
+			case 5:
+                break;
+								
 			default:
-		        printf("\nError! please write a valid operator\n\n");
+                printf(" ERROR: Invalid choice!\n");
 		}
-	}
+		
+	} while(option != 5);
+	
+	return 0;
 }
